@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+      background-color:navajowhite;
+    }
+
+    body{
+      background:blue;
+      color:#333;
+      scroll-behavior:smooth;
+    }
+
+    /* Navbar */
+    nav{
+      background:#222;
+      padding:15px;
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+
+    nav ul{
+      display:flex;
+      justify-content:center;
+      list-style:none;
+    }
+
+    nav ul li{
+      margin:0 20px;
+    }
+
+    nav ul li a{
+      color:blue;
+      text-decoration:none;
+      font-size:18px;
+      transition:0.3s;
+    }
+
+    nav ul li a:hover{
+      color:#00bcd4;
+    }
+
+    /* Sections */
+    section{
+      min-height:100vh;
+      padding:80px 20px;
+      text-align:center;
+    }
+
+    h1{
+      margin-bottom:20px;
+      color:#222;
+    }
+
+    /* Profile Section */
+    .profile img{
+      width:180px;
+      height:180px;
+      border-radius:50%;
+      margin-bottom:20px;
+      border:5px solid #00bcd4;
+    }
+
+    /* About */
+    .about p{
+      width:70%;
+      margin:auto;
+      line-height:1.8;
+      font-size:18px;
+    }
+
+    /* Skills Table */
+    table{
+      margin:auto;
+      border-collapse:collapse;
+      width:70%;
+      background:white;
+    }
+
+    table, th, td{
+      border:1px solid #333;
+    }
+
+    th{
+      background:#00bcd4;
+      color:white;
+    }
+
+    th, td{
+      padding:15px;
+      text-align:center;
+    }
+
+    /* Contact */
+    .contact p{
+      font-size:20px;
+      margin:10px 0;
+    }
+
+    footer{
+      background:#222;
+      color:black;
+      text-align:center;
+      padding:15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="#profile.jpeg">Profile</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Profile Section -->
+  <section id="profile" class="profile">
+    <h1>My Profile</h1>
+
+    <img src="profile.jpeg" alt="Profile Photo">
+
+    <h2>Nikita Mewada</h2>
+    <p>Web Developer | Designer | Programmer</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h1>About Me</h1>
+
+    <p>
+      Hello! I am a passionate web developer who loves creating
+      beautiful and responsive websites using HTML, CSS, and JavaScript.
+      I enjoy learning new technologies and building creative projects.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h1>My Skills</h1>
+
+    <table>
+      <tr>
+        <th>Skill</th>
+        <th>Level</th>
+        <th>Experience</th>
+      </tr>
+
+      <tr>
+        <td>HTML</td>
+        <td>Advanced</td>
+        <td>2 Years</td>
+      </tr>
+
+      <tr>
+        <td>CSS</td>
+        <td>Advanced</td>
+        <td>2 Years</td>
+      </tr>
+
+      <tr>
+        <td>JavaScript</td>
+        <td>Intermediate</td>
+        <td>1 Year</td>
+      </tr>
+
+      <tr>
+        <td>Python</td>
+        <td>Intermediate</td>
+        <td>1 Year</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h1>Contact Me</h1>
+
+    <p>Email: nikitamewada997@email.com</p>
+    <p>Phone: +91 9876543210</p>
+    <p>Location: India</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 My Portfolio Website</p>
+  </footer>
+
+</body>
+</html>
